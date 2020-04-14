@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 10px;
+}
+
+/* Header styles */
+.header{
+    background-color: #202020;
+    width: 100%;
+    height: 5.1rem;
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+.menubar-youtube{
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: -1rem;
+}
+.menubar-youtube i{
+    font-size: 2rem;
+}
+.search-bar{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+::placeholder{
+    color: #676767;
+}
+.search-bar input[type=text] {
+    width: 55%;
+    padding: .5rem;
+    background-color: #181818;
+    border: 1px solid #121212;
+  }
+.search-bar .search-icon{
+    height: 2.5rem;
+    width: 5rem;
+    background-color: #313131;
+}
+.search-bar i{
+    position: relative;
+    top: 7px;
+    left: 20px;
+    font-size: 1.2rem;
+    color: #6b6b6b;
+}
+.icons{
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icons i{
+    font-size: 1.5rem;
+}
+.icons img{
+    width: 3rem;
+    border-radius: 100%;
+}
+/* Header ends */
+
+/* Side bar styles */
+.side-bar-main{
+    display: flex;
+}
+.side-bar{
+    width: 16vw;
+    /* position: fixed; */
+    height: auto;
+    background-color: #202020;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+	/* overflow-y: scroll; */
+}
+.side-bar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    padding: .7rem 2rem;
+    color: #e9e9e9;
+}
+
+.side-bar ul li i{
+    font-size: 2rem;
+    width: 4rem;
+    color: #909090;
+}
+.side-bar ul{
+    padding: 1rem 0;
+}
+.side-bar hr{
+    border-color: #343434;
+}
+.side-bar .subscription{
+    color: #969696;
+    text-transform: uppercase;
+    padding: 2rem 2rem;
+    padding-bottom: 1rem;
+}
+.side-bar .channels img{
+    width: 100%;
+    border-radius: 100%;
+}
+.side-bar .channels{
+    padding-top: 0;
+}
+.side-bar .channels li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.side-bar .channel-image{
+    width: 12%;
+}
+.side-bar .channels li h3{
+    font-size: 1.2rem;
+    width: 83%;
+    margin-left: 2rem;
+}
+.side-bar .channels li i{
+    font-size: .5rem;
+    width: 5%;
+    color: #3ea6ff;
+}
+/* Side-bar ends */
+
+/* Main content styles */
+.main-content{
+    width: 84vw;
+    background-color: #181818;
+    height: auto;
+}
+.main-content .container{
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+.main-content .container h3{
+    font-size: 2rem;
+    color: #fff;
+}
+.main-content .container .recommended{
+    padding-bottom: 1.5rem;
+}
+.main-content .container .videos{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    grid-row-gap: 4rem;
+}
+
+.main-content .container .videos img{
+    width: 100%;
+}
+.main-content .container .videos .video-time{
+    float: right;
+    width: 45px;
+    height: 13px;
+    background-color: #181818;
+    position: relative;
+    top: -20px;
+    left: -5px;
+}
+.main-content .container .videos .video-time p{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.main-content .container .videos .owner-icon img{
+    width: 30px;
+    border-radius: 100%;
+}
+.main-content .container .videos .icon-description{
+    display: flex;
+    color: #fff;
+    padding-top: 1rem;
+}
+.main-content .container .videos .icon-description .owner-description{
+    margin-left: 1rem;
+}
+.main-content .container .videos .icon-description .owner-description .owner-title{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.main-content .container .videos .icon-description .owner-description .owner-name{
+    font-size: 1.3rem;
+    color: #aaaaa5;
+}
+.main-content .container .videos .icon-description .owner-description .views-date{
+    font-size: 1.3rem;
+    color: #aaaaa5;
+}
